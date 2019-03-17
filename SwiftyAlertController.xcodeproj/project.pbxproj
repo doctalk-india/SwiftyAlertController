@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7D37E468223EE50D00F6B8F9 /* SwiftyAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D37E466223EE50D00F6B8F9 /* SwiftyAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D37E46F223EE52B00F6B8F9 /* UIAlertController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D37E46E223EE52B00F6B8F9 /* UIAlertController+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D37E463223EE50D00F6B8F9 /* SwiftyAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D37E466223EE50D00F6B8F9 /* SwiftyAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyAlertController.h; sourceTree = "<group>"; };
 		7D37E467223EE50D00F6B8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D37E46E223EE52B00F6B8F9 /* UIAlertController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				7D37E466223EE50D00F6B8F9 /* SwiftyAlertController.h */,
 				7D37E467223EE50D00F6B8F9 /* Info.plist */,
+				7D37E46E223EE52B00F6B8F9 /* UIAlertController+extensions.swift */,
 			);
 			path = SwiftyAlertController;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					7D37E462223EE50D00F6B8F9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D37E46F223EE52B00F6B8F9 /* UIAlertController+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		7D37E46C223EE50D00F6B8F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = care.pulse.SwiftyAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		7D37E46D223EE50D00F6B8F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
