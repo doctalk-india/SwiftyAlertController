@@ -9,8 +9,13 @@
 import Foundation
 
 extension UIAlertController {
-    func action(_ title: String?, style: UIAlertAction.Style = .default, handler: ((UIAlertAction) -> Void)?) -> UIAlertController {
+    func action(_ title: String?, style: UIAlertAction.Style = .default, handler: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
         addAction(UIAlertAction(title: title, style: style, handler: handler))
+        return self
+    }
+
+    func textField(configurationHandler: ((UITextField) -> Void)? = nil) -> UIAlertController {
+        addTextField(configurationHandler: configurationHandler)
         return self
     }
 
